@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.AnimationSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="tweenGroup">
+			<tween:TweenItem target="{button}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object y="{200}" scaleX="{1.5}" scaleY="{1.5}" alpha="{0.5}" rotation="{180}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Button id="button" label="Button" x="193" y="35" width="100" height="50" anchorOffsetX="50" anchorOffsetY="25"/>
+</e:Skin>
